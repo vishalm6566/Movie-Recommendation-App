@@ -49,7 +49,7 @@ const AppNews = () => {
               setMovie(e.target.value)
             }}
           />
-          <button onClick={getMovieData} style={{ height: "50px", marginTop: "10px" }}>
+          <button onClick={getMovieData} style={{ height: "50px", marginTop: "15px" }}>
 
             Get Movie
 
