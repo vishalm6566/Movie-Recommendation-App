@@ -18,7 +18,7 @@ const AppNews = () => {
   }, []);
   const getMovieData = () => {
     console.log();
-    let url = `https://omdbapi.com/?t=${title}&apikey=${process.env.REACT_APP_APIKEY}`;
+    let url = `https://omdbapi.com/?t=${title}&apikey=82bb6378`;
     setLoading(true)
     fetch(url)
       .then((res) => res.json())
