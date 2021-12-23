@@ -17,8 +17,8 @@ const AppNews = () => {
     // eslint-disable-next-line
   }, []);
   const getMovieData = () => {
-    console.log();
-    let url = `https://omdbapi.com/?t=${title}&apikey=82bb6378`;
+    console.log(process.env.REACT_APP_APIKEY)
+    let url = `https://omdbapi.com/?t=${title}&apikey=${process.env.REACT_APP_APIKEY}`;
     setLoading(true)
     fetch(url)
       .then((res) => res.json())
