@@ -17,7 +17,7 @@ const AppNews = () => {
     // eslint-disable-next-line
   }, []);
   const getMovieData = () => {
-    console.log(process.env.REACT_APP_APIKEY)
+    
     let url = `https://omdbapi.com/?t=${title}&apikey=${process.env.REACT_APP_APIKEY}`;
     setLoading(true)
     fetch(url)
